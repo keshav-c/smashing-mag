@@ -4,20 +4,43 @@
     border: 0;
 }
 
-header {
-    height: 4em;
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Rokkitt', serif; 
+*/
+
+body > header,
+body > footer {
+    height: 10em;
     background: rgba(187, 35, 35, 0.6);
 }
 
-h1 {
+/* h1 {
     font-size: 1.5em;
-    background-color: white;
+    
+} */
+
+.featured-articles-container {
+    position: relative;
 }
 
 .featured-articles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 30em;
+    
+}
+
+.featured-articles-teaser {
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    width: 400px;
+    margin-top: 5px;
+    margin-left: -200px;
+    top: 0;
+    left: 50%;
+    background-color: white;
 }
 
 .featured-article {
@@ -25,19 +48,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     padding: 0 100px;
-}
-
-.featured-article > h2 {
-    margin-top: 30px;
-}
-
-.latest-articles-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(60px, 20em);
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    padding: 50px 70px;
 }
 
 .featured-article:nth-child(1) {
@@ -54,6 +64,19 @@ h1 {
 
 .featured-article:nth-child(4) {
     background-color: rgb(185, 53, 53);
+}
+
+.featured-article > h2 {
+    margin-top: 30px;
+}
+
+.latest-articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(60px, 20em);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    padding: 50px 70px 0 70px;
 }
 
 .membership-promo {
@@ -93,8 +116,9 @@ button {
     justify-content: space-around;
 }
 
-.latest-articles-container > p {
-    grid-column: 1 / -1;
+.load-more {
+    width: 400px;
+    margin: 40px auto;
     text-align: center;
 }
 
@@ -117,10 +141,13 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 20em;
-    padding: 0 40px; 
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 20px 40px; 
 }
 
 .person-of-the-week {
+    border: 1px solid green;
     grid-column: 1 / -1;
     padding: 50px 200px;
 }
@@ -129,4 +156,74 @@ button {
     margin-right: 30px;
     width: 150px;
     height: auto;
+}
+
+.shared-article {
+    border: 1px solid green;
+    padding: 0 10px 0 50px; 
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
+
+}
+
+.shared-article > * {
+    margin-bottom: 1em;
+}
+
+.feature-panel {
+    background: rgb(226, 44, 44);
+    padding: 30px 50px;
+    overflow: hidden;
+}
+
+.feature-panel img {
+    float: right;
+    width: 250px;
+    height: auto;
+    
+}
+
+.feature-panel > * {
+    margin-bottom: 20px;
+    
+} 
+
+.guides-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 20em;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin: 20px 50px;
+}
+
+.guides-container article {
+    border: 1px solid rebeccapurple; 
+}
+
+.guides-container h2 {
+    margin-bottom: 20px; 
+}
+
+.guides-container ul {
+    margin-left: 20px;
+}
+
+.newsletter {
+    background: rgb(226, 44, 44);
+    border-radius: 10px;
+    grid-column: 2 / span 2;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.newsletter > * {
+    margin-bottom: 30px;
+}
+
+.newsletter input {
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }

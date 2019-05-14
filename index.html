@@ -3,29 +3,34 @@
     <head>
         <meta charset="utf-8">
         <title>Smashing Magazine</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700|Rokkitt:100,400,700" rel="stylesheet">
         <link rel="stylesheet" href="./styles/main.css">
     </head>
     <body>
-        <header></header>
+        <header>
+            Header Here!
+        </header>
         <div class="main">
-            <div class="featured-articles">
-                <!-- <h1 class="featured-articles-teaser">Don't miss the latest articles!</h1> -->
-                <article class="featured-article">
-                    <p><a href="/author1">Peter Vitaly</a> Wrote</p>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, cum.</h2>
-                </article>
-                <article class="featured-article">
-                    <p><a href="/author1">Peter Vitaly</a> Wrote</p>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, cum.</h2>
-                </article>
-                <article class="featured-article">
-                    <p><a href="/author1">Peter Vitaly</a> Wrote</p>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, cum.</h2>
-                </article>
-                <article class="featured-article">
-                    <p><a href="/author1">Peter Vitaly</a> Wrote</p>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, cum.</h2>
-                </article>
+            <div class="featured-articles-container">
+                <div class="featured-articles">
+                    <article class="featured-article">
+                        <p><a href="/author1">Peter Vitaly</a> Wrote</p>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, cum.</h2>
+                    </article>
+                    <article class="featured-article">
+                        <p><a href="/author1">Peter Vitaly</a> Wrote</p>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, cum.</h2>
+                    </article>
+                    <article class="featured-article">
+                        <p><a href="/author1">Peter Vitaly</a> Wrote</p>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, cum.</h2>
+                    </article>
+                    <article class="featured-article">
+                        <p><a href="/author1">Peter Vitaly</a> Wrote</p>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, cum.</h2>
+                    </article>
+                </div>
+                <h1 class="featured-articles-teaser">Don't miss the latest articles!</h1>
             </div>
             <div class="cover">
                 <!-- <div class="membership-popup"></div> -->
@@ -91,8 +96,10 @@
                         <button type="button" name="explore">Explore features</button>
                         <p>Already have an account?<a href="#">Sign in</a></p>
                     </div>
-                    <p><a href="#">SEE ALL LATEST ARTICLES &rightarrow; </a></p>
                 </section>
+                <div class="load-more">
+                    <p><a href="#">SEE ALL LATEST ARTICLES &rightarrow; </a></p>
+                </div>
                 <section class="conf-panel bg-blue">
                     <p>COMING UP NEXT . JUNE 25-26, 2019</p>
                     <h2><a href="#">SmashingConf Toronto 2019</a></h2>
@@ -111,37 +118,127 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
                     </div>
                     <div class="shared-article">
-                            <p><a href="#">Angelou Douglas</a> shared</p>
-                            <h2><a href="#">Fun With MutationObserver</a></h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
+                        <p><a href="#">Angelou Douglas</a> shared</p>
+                        <h2><a href="#">Fun With MutationObserver</a></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
                     </div>
                     <div class="shared-article">
-                            <p><a href="#">Angelou Douglas</a> shared</p>
-                            <h2><a href="#">Fun With MutationObserver</a></h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
+                        <p><a href="#">Angelou Douglas</a> shared</p>
+                        <h2><a href="#">Fun With MutationObserver</a></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
                     </div>
                     <div class="shared-article">
-                            <p><a href="#">Angelou Douglas</a> shared</p>
-                            <h2><a href="#">Fun With MutationObserver</a></h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
+                        <p><a href="#">Angelou Douglas</a> shared</p>
+                        <h2><a href="#">Fun With MutationObserver</a></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
                     </div>
                     <div class="shared-article">
-                            <p><a href="#">Angelou Douglas</a> shared</p>
-                            <h2><a href="#">Fun With MutationObserver</a></h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
+                        <p><a href="#">Angelou Douglas</a> shared</p>
+                        <h2><a href="#">Fun With MutationObserver</a></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
                     </div>
                     <div class="shared-article">
-                            <p><a href="#">Angelou Douglas</a> shared</p>
-                            <h2><a href="#">Fun With MutationObserver</a></h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
+                        <p><a href="#">Angelou Douglas</a> shared</p>
+                        <h2><a href="#">Fun With MutationObserver</a></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque debitis, minus qui quos mollitia hic molestiae deserunt placeat velit ratione dolore, reprehenderit aspernatur repellat veniam illum nostrum</p>
                     </div>
-
-                    
                 </section>
-                <section class="feature-panel"></section>
-                <section class="curated-articles-container bg-beige"></section>
+                <div class="load-more">
+                    <p><a href="#">MORE LINKS ON TWITTER &rightarrow; </a></p>
+                </div>
+                <section class="feature-panel">
+                    <img src="./images/design-systems-hardcover-book.png" alt="book cover">
+                    <h5>FEATURED SMASHING BOOK</h5>
+                    <h2><a href="#">Design Systems</a></h2>
+                    <p>Meet <strong>Design Systems</strong>, a recent Smashing book in which Alla Kholmatova explores how to set up an <strong>effective design system</strong> to create great digital products. With common traps, gotchas and lessons learned.</p>
+                    <button type="button" name="explore">Explore all speakers and topic &rarrlp;</button>
+                </section>
+                <section class="guides-container bg-beige">
+                    <article>
+                        <header>
+                            <small>GUIDES</small>
+                        </header>
+                        <div>
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <ul>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <header>
+                            <small>GUIDES</small>
+                        </header>
+                        <div>
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <ul>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <header>
+                            <small>GUIDES</small>
+                        </header>
+                        <div>
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <ul>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <header>
+                            <small>GUIDES</small>
+                        </header>
+                        <div>
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <ul>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                                <li><a href="#">Lorem, ipsum.</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <div class="newsletter">
+                        <h2><a href="#">Smashing Newsletter</a></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quos excepturi impedit at itaque aliquid!</p>
+                        <form action="/newsletter" method="POST">
+                            <input type="email" name="sub-email" id="user-email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p><a href="/nl">Useful tips for web designers</a>. Sent 2× a month.<br>You can unsubscribe any time &ndash; obviously.</p>
+                    </div>
+                </section>
+                <div class="load-more">
+                    <p><a href="#">SEE ALL ARTICLES &rightarrow; </a></p>
+                </div>
             </div>
         </div>
-        <footer></footer>
+        <footer>
+            Footer Here!
+        </footer>
     </body>
 </html>
