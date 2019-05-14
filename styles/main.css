@@ -34,19 +34,11 @@ h1 {
 .latest-articles-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(60px, 20em);
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-    padding: 100px 70px;
+    padding: 50px 70px;
 }
-
-.membership-promo {
-    grid-column: 1 / span 2;
-    background: red;
-}
-
-
-
-
 
 .featured-article:nth-child(1) {
     background-color: rgb(226, 98, 98);
@@ -62,4 +54,79 @@ h1 {
 
 .featured-article:nth-child(4) {
     background-color: rgb(185, 53, 53);
+}
+
+.membership-promo {
+    grid-column: 1 / span 2;
+    background: rgb(201, 37, 37);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 70px;
+    text-align: center;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.arrow {
+    justify-self: flex-end;
+}
+
+.article-grid {
+    border: 1px solid black;
+}
+
+.tv-promo {
+    grid-column: 1 / -1;
+    background: rgb(201, 37, 37);
+    border-radius: 10px;
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.latest-articles-container > p {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.conf-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background: blue;
+    padding: 50px 200px;
+    color: white;
+    height: 30em;  
+}
+
+.conf-panel  a {
+    color: white;
+}
+
+.curated-articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 20em;
+    padding: 0 40px; 
+}
+
+.person-of-the-week {
+    grid-column: 1 / -1;
+    padding: 50px 200px;
+}
+.person-of-the-week img {
+    float: left;
+    margin-right: 30px;
+    width: 150px;
+    height: auto;
 }
