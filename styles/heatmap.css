@@ -1,0 +1,85 @@
+p, h1, h2, h3, h4, h5, a,
+strong, em,
+.promo-title a,
+.membership-promo a, .tv-promo a, .newsletter-promo a,
+.conf-title a {
+    color: black;
+    background-color: white;
+}
+
+body {
+    background-color: #aaa;
+}
+
+.featured-article:nth-child(1) {
+    background-color: #444;
+    
+}
+
+.featured-article:nth-child(2) {
+    background-color: #555;
+}
+
+.featured-article:nth-child(3) {
+    background-color: #666;
+    
+}
+
+.featured-article:nth-child(4) {
+    background-color: #777;
+}
+
+.latest-article {
+    background-color: #999;
+}
+
+.membership-promo {
+    background-color: #444;
+}
+
+.tv-promo {
+    background-color: #666;
+}
+
+.conf-panel {
+    background-color: #444;
+}
+
+.person-of-the-week {
+    background-color: #666;
+}
+
+.shared-article {
+    background-color: #888;
+}
+
+.feature-panel {
+    background-color: #444;
+}
+
+.guides-container article {
+    background-color: #666;
+}
+
+.newsletter-promo {
+    background-color: #444;
+}
+
+/*
+---------------------------------------------------------
+*/
+
+body > header,
+body > footer {
+    background: White;
+    height: 9em;
+}
+
+header p,
+footer p {
+    color: black;
+    font-size: 3em;
+    /* padding-bottom: 30px;
+    padding-top: 30px; */
+    text-align: center;
+}
