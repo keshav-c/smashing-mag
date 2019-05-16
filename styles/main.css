@@ -1,4 +1,6 @@
-* {
+body, header, p, div, article, h1, h2,
+section, button, img, h4, ul, li, form,
+input, footer{
     border: 0;
     margin: 0;
     padding: 0;
@@ -60,7 +62,8 @@ footer p {
     padding: 0 100px;
 }
 
-.featured-article > * {
+.featured-article > p,
+.featured-article-title {
     margin-bottom: 30px;
 }
 
@@ -137,8 +140,11 @@ footer p {
     font-size: 1.3em;
 }
 
-.latest-article > *,
-.shared-article > * {
+.latest-article-title,
+.latest-article > p,
+.latest-article > div,
+.shared-article > p,
+.curated-article-title {
     margin-bottom: 20px;
 }
 
@@ -185,7 +191,10 @@ footer p {
     font-size: 1.3em;
 }
 
-.book-details > * {
+.feature-heading,
+.book-title,
+.book-details > p,
+.book-details > button {
     margin: 20px 0;
 }
 
@@ -200,9 +209,18 @@ footer p {
     width: 30%;
 }
 
-.membership-promo > *,
-.tv-promo > *,
-.newsletter-promo > * {
+.membership-promo > div,
+.promo-title,
+.membership-promo > p,
+.membership-promo > button,
+.tv-promo > div,
+/* .tv-promo > h1, */
+.tv-promo > p,
+.tv-promo > button,
+/* .newsletter-promo > h1, */
+.newsletter-promo > p,
+.newsletter-promo > div,
+.newsletter-promo > form {
     margin-bottom: 20px;
 }
 
@@ -260,7 +278,9 @@ button {
     text-align: center;
  }
 
-.conf-panel > * {
+.conf-panel > p,
+.conf-title,
+.conf-panel > button {
     margin-bottom: 40px;
 }
 
@@ -268,7 +288,8 @@ button {
     color: white;
 }
 
-.conf-panel p:first-child > * {
+.conf-panel p:first-child > span,
+.conf-panel p:first-child > time {
     font-weight: bold;
     margin-left: 15px;
     margin-right: 15px;
@@ -328,7 +349,8 @@ button {
     padding: 0 10px 0 50px; 
 }
 
-.shared-article > * {
+.shared-article > p,
+.curated-article-title {
     margin-bottom: 1em;
 }
 
