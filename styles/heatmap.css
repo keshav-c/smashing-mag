@@ -3,8 +3,8 @@ strong, em,
 .promo-title a, .membership-promo a, .tv-promo a, 
 .newsletter-promo a, .conf-title a 
 {
-    color: black;
     background-color: white;
+    color: black;
 }
 
 body {

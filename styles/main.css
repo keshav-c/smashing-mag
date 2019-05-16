@@ -13,7 +13,7 @@ body {
 
 body > header,
 body > footer {
-    background: rgba(55, 134, 44, 0.911);
+    background: rgba(55, 134, 44);
     height: 9em;
 }
 
@@ -46,7 +46,7 @@ footer p {
     display: grid;
     grid-auto-rows: 45em;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 5fr, 4fr;
+    grid-template-rows: 5fr 4fr;
 }
 
 .featured-articles a {
