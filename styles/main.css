@@ -1,4 +1,6 @@
-* {
+body, header, p, div, article, h1, h2,
+section, button, img, h4, ul, li, form,
+input, footer{
     border: 0;
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ body {
 
 body > header,
 body > footer {
-    background: rgba(55, 134, 44, 0.911);
+    background: rgba(55, 134, 44);
     height: 9em;
 }
 
@@ -44,7 +46,6 @@ footer p {
     display: grid;
     grid-auto-rows: 45em;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 5fr, 4fr;
 }
 
 .featured-articles a {
@@ -60,7 +61,8 @@ footer p {
     padding: 0 100px;
 }
 
-.featured-article > * {
+.featured-article > p,
+.featured-article-title {
     margin-bottom: 30px;
 }
 
@@ -88,12 +90,12 @@ footer p {
 }
 
 .latest-articles-container {
+    column-gap: 30px;
     display: grid;
     grid-auto-rows: 45em;
-    grid-column-gap: 30px;
-    grid-row-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     padding: 50px 70px 0 70px;
+    row-gap: 20px;
 }
 
 .latest-article {
@@ -137,8 +139,11 @@ footer p {
     font-size: 1.3em;
 }
 
-.latest-article > *,
-.shared-article > * {
+.latest-article-title,
+.latest-article > p,
+.latest-article > div,
+.shared-article > p,
+.curated-article-title {
     margin-bottom: 20px;
 }
 
@@ -185,7 +190,10 @@ footer p {
     font-size: 1.3em;
 }
 
-.book-details > * {
+.feature-heading,
+.book-title,
+.book-details > p,
+.book-details > button {
     margin: 20px 0;
 }
 
@@ -200,9 +208,18 @@ footer p {
     width: 30%;
 }
 
-.membership-promo > *,
-.tv-promo > *,
-.newsletter-promo > * {
+.membership-promo > div,
+.promo-title,
+.membership-promo > p,
+.membership-promo > button,
+.tv-promo > div,
+/* .tv-promo > h1, */
+.tv-promo > p,
+.tv-promo > button,
+/* .newsletter-promo > h1, */
+.newsletter-promo > p,
+.newsletter-promo > div,
+.newsletter-promo > form {
     margin-bottom: 20px;
 }
 
@@ -255,12 +272,13 @@ button {
 .conf-panel {
     background: blue;
     color: white;
-    height: 30em;
     padding: 50px 200px;
     text-align: center;
  }
 
-.conf-panel > * {
+.conf-panel > p,
+.conf-title,
+.conf-panel > button {
     margin-bottom: 40px;
 }
 
@@ -268,7 +286,8 @@ button {
     color: white;
 }
 
-.conf-panel p:first-child > * {
+.conf-panel p:first-child > span,
+.conf-panel p:first-child > time {
     font-weight: bold;
     margin-left: 15px;
     margin-right: 15px;
@@ -292,12 +311,12 @@ button {
 }
 
 .curated-articles-container {
+    column-gap: 20px;
     display: grid;
     grid-auto-rows: 20em;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    padding: 20px 40px; 
+    padding: 20px 40px;
+    row-gap: 20px;
 }
 
 
@@ -328,17 +347,18 @@ button {
     padding: 0 10px 0 50px; 
 }
 
-.shared-article > * {
+.shared-article > p,
+.curated-article-title {
     margin-bottom: 1em;
 }
 
 .guides-container {
+    column-gap: 20px;
     display: grid;
     grid-auto-rows: min-max(35em, max-content);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     margin: 20px 50px;
+    row-gap: 20px;
 }
 
 .tut-cat-title {
