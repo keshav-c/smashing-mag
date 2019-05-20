@@ -355,7 +355,7 @@ button {
 .guides-container {
     column-gap: 20px;
     display: grid;
-    grid-auto-rows: min-max(35em, max-content);
+    grid-auto-rows: minmax(10em, max-content);
     grid-template-columns: repeat(4, 1fr);
     margin: 20px 50px;
     row-gap: 20px;
