@@ -46,7 +46,6 @@ footer p {
     display: grid;
     grid-auto-rows: 45em;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 5fr 4fr;
 }
 
 .featured-articles a {
